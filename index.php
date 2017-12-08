@@ -11,5 +11,7 @@
  * kommentaar
  * käib nii
 */
-`
+// Stringide väljastamine
+print "See on tavaline tekst <br>";
+echo "Tavaline tekst";
 ?>
