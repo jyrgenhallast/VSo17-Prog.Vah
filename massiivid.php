@@ -129,3 +129,27 @@ function elementideKorrutis($massiiv){
 }
 elementideKorrutis(array(1, 0, 6, 0, 0, 3, 5));
 echo '<br>';
+
+//Ülesanne 5
+/*Töötluses kasutada massiivi
+  $massiiv = array(1, 1, 1, 2, 2, 2, 2, 3).
+  Loo funktsioon mitteDubleeri, mis võtab
+  parameetrina massiivi ja ei väljasta dubleeritud
+  elemendid. Ehk näidemassiivi puhul tuleb väljastada
+  ainult 1, 2, 3 - s.t. ilma dubleerimist.
+  NB! Lahenduses tuleb kasutada AINULT ÜKS foreach
+  tsükli abil, samuti EI SAA kasutada
+  grupeerimisfunktisoone ega muuta antud massiivi
+  */
+
+function mitteDubleeri($massiiv){
+	$valjasta = '';
+	foreach($massiiv as $element){
+		if($valjasta != $element){
+			$valjasta = $element;
+			echo $element.'&nbsp;';
+		}
+	}
+}
+mitteDubleeri(array(1, 1, 1, 2, 2, 2, 2, 3));
+echo '<hr />';
