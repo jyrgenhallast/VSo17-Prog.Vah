@@ -47,3 +47,26 @@ echo '<pre>';
 print_r($testMassiiv);
 echo '</pre>';
 echo '<hr />';
+
+//Ülesanne 2
+/* Loo funktsioon nimega valjastaMassiiv,
+ mis võtab parameetrina massiivi ja
+ väljastab tema elemendid
+ üheveerulise tabeli kujul
+ Väljundi loomisel kasutada foreach
+ tsükkel
+ */
+function valjastaMassiiv($massiiv){
+	    echo '<table border="1">';
+    foreach ($massiiv as $element){
+		        echo '<tr>';
+            echo '<td>';
+            echo $element;
+            echo '</td>';
+        echo '</tr>';
+    }
+    echo '</table>';
+}
+
+valjastaMassiiv($testMassiiv);
+echo '<hr />';
