@@ -3,9 +3,19 @@ class tekst
 { // klassi algus
 	// klassi omadused, väljad
 	// klassi muutuja
-	var $sone = ''; // teksti kirjeldavad sõnad
+	var $sone = '';// teksti kirjeldavad sõnad
+
+    /**
+     * tekst constructor.
+     * @param string $sone
+     */
+    public function __construct($sone)
+    {
+        $this->maaraTekst($sone);
+    }
+
 	/**
-	 * tekst constructor.
+	 * teksti konstruktor.
 	 * @param string $sone
 	 */
 	public function __construct($sone)
