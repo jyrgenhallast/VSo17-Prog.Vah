@@ -14,14 +14,7 @@ class tekst
         $this->maaraTekst($sone);
     }
 
-	/**
-	 * teksti konstruktor.
-	 * @param string $sone
-	 */
-	public function __construct($sone)
-	{
-		$this->maaraTekst($sone);
-	}
+
 	// klassi tegevuse meetoditena
 	//teksti määramine
 	// maaraTekst(Tere Maailm!);
