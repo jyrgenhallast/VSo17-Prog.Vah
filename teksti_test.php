@@ -11,3 +11,11 @@ print_r($minuTekst);
 echo '</pre>';
 // printimine
 $minuTekst->prindiTekst();
+
+// uus objekt, määrame sisu
+$mustTekst = new tekst('Must tekst');
+echo '<pre>';
+print_r($mustTekst);
+echo '</pre>';
+//prindimine
+$mustTekst->prindiTekst();
